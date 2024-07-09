@@ -3,23 +3,45 @@
 
 /* color navbar */
 .bg-light-brown {
-    background-color: #eda919; /* Color fondo navbar */
+    background-color: #0D0D0D; /* Color fondo navbar */
     color: rgb(255, 255, 255); /* Color texto */
   }
 
-/*Color icono*/
-.navbar-brand .fa-utensils {
-    color: #d52f26; /* Color rojo para el icono */
+.navbar {
+    font-family: 'Kanit', sans-serif;
 }
 
+/* Estilo para la navbar */
+.navbar-dark .navbar-nav .nav-link {
+    color: white; 
+}
+
+/* Estilo para el recuadro sobre los enlaces */
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+    background-color: #8C1C03;
+    border: 2px solid #8C1C03; 
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px; 
+}
+
+
+
+
+
+
+
 .btn-custom-red {
-    background-color: #d52f26;
-    border-color: #d52f26;
+    background-color: #8C1C03;
+    border-color: #8C1C03;
     color: white;
 }
 
 
 
 body{
-    background-color: rgb(196, 187, 187);
+    background-color: #dfb37e;
 }
