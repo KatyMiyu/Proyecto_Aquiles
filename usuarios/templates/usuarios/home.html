@@ -13,23 +13,25 @@
 </head>
 <body>
 
-    <!--Navbar-->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-light-brown">
-        <a class="navbar-brand" href="#"><i class="fa-solid fa-utensils"></i></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
-          <span class="navbar-text">
-            Navbar text with an inline element
-          </span>
-        </div>
-      </nav>
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-utensils"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          {% for nav in navs_home %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ nav.url_home }}">{{ nav.nav_home }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <span class="navbar-button">
+          <a href="{% url 'login' %}" class="btn btn-custom-red">Ingresar</a>
+        </span>
+      </div>
+    </nav>
 
 
 

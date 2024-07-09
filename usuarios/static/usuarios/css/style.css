@@ -3,14 +3,22 @@
 
 /* color navbar */
 .bg-light-brown {
-    background-color: #e89528; /* Color fondo navbar */
-    color: white; /* Color texto */
+    background-color: #eda919; /* Color fondo navbar */
+    color: rgb(255, 255, 255); /* Color texto */
   }
 
 /*Color icono*/
 .navbar-brand .fa-utensils {
-    color: rgb(107, 22, 22); /* Color rojo para el icono */
+    color: #d52f26; /* Color rojo para el icono */
 }
+
+.btn-custom-red {
+    background-color: #d52f26;
+    border-color: #d52f26;
+    color: white;
+}
+
+
 
 body{
     background-color: rgb(196, 187, 187);
