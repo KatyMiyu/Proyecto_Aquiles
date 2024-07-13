@@ -36,73 +36,117 @@
     <!--Container-->
 
     <div class="container-fluid">
-        <hr>
+      <hr>
 
-        <div class="row">
+      <div class="row">
 
-            <div class="col-lg-6">
-                <h3>Pedidos particulares</h3>
-                <table class="table table-sm">
-                    <thead style="background-color: #734F22; color: white;" >
-                      <tr>
-                        <th scope="col">Cod. Pedido</th>
-                        <th scope="col">Nombre cliente</th>
-                        <th scope="col">Direccion cliente</th>
-                        <th scope="col">Telefono cliente</th>
-                        <th scope="col">Detalles pedido</th>
-                      </tr>
-                    </thead >
-                    <tbody style="background-color: #d1c0ab; color: black;">
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                      </tr>
-                    </tbody>
-                </table>
+          <div class="col-lg-6">
+              <h1>Pedidos particulares</h1>
+              <br>
+              <table class="table table-sm">
+                  <thead style="background-color: #734F22; color: white;" >
+                    <tr>
+                      <th scope="col">Cod. Pedido</th>
+                      <th scope="col">Nombre cliente</th>
+                      <th scope="col">Direccion cliente</th>
+                      <th scope="col">Telefono cliente</th>
+                      <th scope="col">Detalles pedido</th>
+                    </tr>
+                  </thead >
+                  <tbody style="background-color: #d1c0ab; color: black;">
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Darko Rivas</td>
+                      <td>Los patos mafiosos 6661</td>
+                      <td> +569 5555 8888 </td>
+                      <td> Delivery </td>
+                    </tr>
+                  </tbody>
+              </table>
+          </div>
+          <div class="col-lg-6">
+              <h1>Pedidos para empresas</h1>
+              <br>
+              <table class="table table-sm">
+                  <thead style="background-color: #8C1C03; color: white;" >
+                    <tr>
+                      <th scope="col">Cod. Pedido</th>
+                      <th scope="col">Nombre de la empresa</th>
+                      <th scope="col">Direccion de la empresa</th>
+                      <th scope="col">Contacto</th>
+                      <th scope="col">Tipo de pedido</th>
+                    </tr>
+                  </thead >
+                  <tbody style="background-color: #d1c0ab; color: black;">
+                    <tr>
+                      <th scope="row">1</th>
+                      <td> Gatitos </td>
+                      <td> Los perritos 1234 </td>
+                      <td> +569 2222 7777</td>
+                      <td> Delivery </td>
+                    </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+      <br>
+      <hr>
+      <br>
+
+      <!--Mapa-->
+      <div class="row">
+        <div class="col-lg-5">
+          <form>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label">Ingresa la direccion</label>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" id="form-control-plaintext">
+              </div class="col-sm-4">
+              <button type="button" class="btn btn-dark"> Buscar Dirección</button>
             </div>
-            <div class="col-lg-6">
-                <h3>Pedidos para empresas</h3>
-                <table class="table table-sm">
-                    <thead style="background-color: #8C1C03; color: white;" >
-                      <tr>
-                        <th scope="col">Cod. Pedido</th>
-                        <th scope="col">Nombre de la empres</th>
-                        <th scope="col">Direccion de la empresa</th>
-                        <th scope="col">Contacto</th>
-                        <th scope="col">Tipo de pedido</th>
-                      </tr>
-                    </thead >
-                    <tbody style="background-color: #d1c0ab; color: black;">
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                      </tr>
-                    </tbody>
-                </table>
-            </div>
+          </form>
         </div>
-
-        <!--Mapa-->
-        <div class="row">
-
-            <div class="col-lg-12">
-                        
-                
-
-
-            </div>
-
+        <div class="col-md-7">
+          <img src="https://static.vecteezy.com/system/resources/previews/001/977/224/non_2x/gps-map-with-pin-illustration-free-vector.jpg" alt="" class="img-fluid" style="max-width: 100%;">
         </div>
+      </div>
+      <br>
 
 
-    </div>
 
+      <!--Footer-->
+      <div class="row d-flex justify-content-center align-items-center" style="background-color: rgb(31, 31, 43); padding: 20px;">
+        <div class="col-lg-4 text-center">
+          <br>
+          <img src="{% static 'usuarios/images/logo.png'%}" alt="" class="img-fluid" style="max-width: 200px;">
+          <hr>
+        </div>
+    
+        <div class="col-lg-4">
+          <h4 style="color: azure;">"El Comilón"</h4>
+          <ul class="list-unstyled" style="color: azure;">
+            <li><i class="fa-solid fa-phone"></i> Telefono: 22 5555 6666</li>
+            <li><i class="fa-solid fa-building"></i> Direción: Av. pricipal 123</li>
+            <li><i class="fa-solid fa-envelope"></i> Correo: el_comilon@contacto.cl </li>
+          </ul>
+        </div>
+    
+        <div class="col-lg-4 ">
+          <h4 style="color: azure;">Redes Sociales</h4>
+          <ul class="list-unstyled" style="color: azure;">
+            <li><i class="fa-brands fa-twitter"></i> Twiter: @El_comilon_Oficial</li>
+            <li><i class="fa-brands fa-square-facebook"></i> Facebook: El_comilon Oficial</li>
+            <li><i class="fa-brands fa-square-instagram"></i> Instagram: El_comilon_Oficial </li>
+          </ul>
+        </div>
+    
+      </div>
+  </div>
+  
+
+  <!-- Buscar direcciones -->
+
+  
 
 
 
